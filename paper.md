@@ -17,4 +17,24 @@ Python developer will be familiar with the concept of List data structure in pyt
 Here is come the benefits of BList in python programming language. BList’s performance will works better on some of the important cases, such as copying, and inserting a data. The algorithm of BList takes O(log n) for inserting, and O(1) for copying. If we compare to the algorithm of List, list takes O(n) for inserting, which is not efficient. Since BList is based on the B+tree, which we are going to cover more about B+tree on this paper. BList is also offering asymptotic performance. However, list and BList have the common performance on the smaller sets of data. BList data structure will be more useful for large input of data. 
 
 
+### -Implementation of BList & the data structure B+tree ###
 
+Although BList has been rejected, it is still released as an extension module of Python language. Therefore, the programmers could download the library online and import it when then need. There are some implementation codes for BList:
+```
+>>> from blist import blist
+>>> items = blist([5, 6, 2])
+>>> more_items = blist(function_that_returns_a_list())
+```
+Different from implementing array list, we need to pass a value in the type of list as a parameter for initializing the BList. The way to use BList is similar to array list, it offers same interface as what we familiar with array list. These are codes for using BList:
+```
+>>> from blist import *
+>>> x = blist([0])             # x is a blist with one element
+>>> x *= 2**29                 # x is a blist with > 500 million elements
+>>> x.append(5)                # append to x
+>>> y = x[4:-234234]           # Take a 500 million element slice from x
+>>> del x[3:1024]              # Delete a few thousand elements from x
+```
+
+As what we mentioned above, BList is a data structure based on B+tree. The reason why is B+tree owns some features unique.
+It is an N-ary tree, which means each node could have more than two children. But different from B-tree, internal nodes of B+tree have no data, they only contain the keys and the pointers to next level. All data are stored in the leaves.
+The other special feature is all leaves of B+tree are in the same level, which means B+tree is always balance. And all leaves nodes are linked, therefore doing a full scan in a tree requires just one linear pass through all leaves.
