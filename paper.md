@@ -38,3 +38,14 @@ Different from implementing array list, we need to pass a value in the type of l
 As what we mentioned above, BList is a data structure based on B+tree. The reason why is B+tree owns some features unique.
 It is an N-ary tree, which means each node could have more than two children. But different from B-tree, internal nodes of B+tree have no data, they only contain the keys and the pointers to next level. All data are stored in the leaves.
 The other special feature is all leaves of B+tree are in the same level, which means B+tree is always balance. And all leaves nodes are linked, therefore doing a full scan in a tree requires just one linear pass through all leaves.
+
+### -Pros and Cons ###
+
+Everything could be double-edge sword, so as BList. 
+As what we mentioned in Implementation, the interface of BList tree is similar to array list, which could reduce the time a beginner spends on getting familiar with  the library.
+The performance of BList with a large number of elements is better than the array-based list. The reason why is the data structure, which has array-like and tree-like aspects. 
+
+“A wide variety of data structure provide good asymptotic performance for insertions and deletions, but they either have O(n) performance for other operations (e.g., linked lists) or have inferior performance for small lists (e.g., binary trees and skip lists).” Therefore, BList might not perform as well as regular list in small amount of elements.
+Adding BList to Python’s default library may have an impact on extension modules, requiring extensive debugging. Performance & desirability in real-world applications has yet to be proven -- more testing is required.
+Finally, increasing the number of data types available to developers makes  their job more difficult. It seems one of the most important reasons that why BList got rejected. The users prefer more friendly over more powerful code.
+As we can see, although BList owns a powerful performance, it also owns disadvantages which prevent it from being accepted. As future developers, we also need to pay attention on user friendly but not just on efficiency.
