@@ -25,9 +25,9 @@ Comparison with List
 ====
 * Comparison based on perfomance
 
-----
 
-![picture of perfomance1](/Users/fadhilsuhendi/Desktop/project/Image/Pictureclipping2.jpg)
+
+\centerline{\includegraphics[width=200px]{./Image/comparisonwithlist.png}}
 
 
 ***
@@ -53,7 +53,7 @@ About B+tree
 ***
 ABout B+tree
 ====
-
+\centerline{\includegraphics[width=300px]{./Image/BTree.png}}
 
 ***
 
@@ -117,24 +117,24 @@ Cons
 
 Perfomance of Blist: Simple Addition
 ========================================
-
+\centerline{\includegraphics[width=300px]{./Image/simple_add.png}}
 
 ***
 
 Perfomance of Blist: For Loop Iteration
 ===========================
-
+\centerline{\includegraphics[width=300px]{./Image/for_loop_it.png}}
     
 ***
 
 Perfomance of Blist: Sorting a Reversed List
 ============
-
+\centerline{\includegraphics[width=300px]{./Image/sort_reverse_list.png}}
 ***
 
 Perfomance of Blist: FIFO Operations
 ==========================
-
+\centerline{\includegraphics[width=300px]{./Image/fifo_op.png}}
 
 ***
 
