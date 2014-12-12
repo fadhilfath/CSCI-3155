@@ -71,3 +71,11 @@ The evolution of JavaScripty allowed it to become much more powerful and capable
 ### - Conclusion ###
 
 While the Python developer community's reasons for rejecting BList make perfect sense, it does not necessarily need to be the last nail in the coffin.  There are ways of altering BList so that it maintains its powerful performance without sacrificing usability.  For example, the API that controls BList methods could be rewritten to fall more in line with that of the current array-based List, allowing it to become much more compatible with the rest of the native Python library.  If the B+tree structure were also simplified or explained in a more easily-understandible way, the learning curve would be reduced to nearly zero.  The higher amount of memory required by small BLists could also be made more efficient, but with the near-exponential growth of storage capacity on modern hard drives, this may become unnecessary.  The most important thing that could be done to save BList, however, is to simply use it.  It is currently available as a third-party extension to Python, but we are confident that if the number of programmers who use it increases, it may yet become a native Python type.
+
+### - References ###
+
+* https://www.python.org/dev/peps/pep-3128/
+* https://pypi.python.org/pypi/blist/
+* http://legacy.python.org/dev/peps/pep-3128/
+* http://stutzbachenterprises.com/performance-blist
+* http://byumcl.bitbucket.org/bootcamp2013/labs/perfomance.html
